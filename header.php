@@ -19,11 +19,7 @@
 	<div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div id="header">
-                    <div id="headerimg">
-                        <img src="<?php header_image(); ?>" class="img-fluid" alt="vienna events" />
-                    </div>
-                <div>
+                <img src="<?php header_image(); ?>" class="img-fluid" style="max-width: 100%; height: auto;" alt="traveler" />
             </div>
         </div>
     </div>
@@ -35,8 +31,14 @@
         <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
     </div><hr>
     <nav class="navbar">
-        <a class="nav-link" href="#">Home</a>
-        <?php wp_list_categories( '&title_li=' ); ?>
-        <?php wp_list_pages( '&title_li=' ); ?>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="<?php wp_list_pages( '&title_li=' ); ?>"></a>
+        </div>
+    </div>
+        <p><?php wp_list_categories( '&title_li=' ); ?></p>
     </nav> <hr>   
 </div> 
