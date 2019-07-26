@@ -9,10 +9,3 @@ Tags: bootstrap
 body{
     background-color: rgb(202, 251, 251);
 }
-
-/* #header {
-    background: url("<?php bloginfo('stylesheet_directory'); ?>/wp_traveler/wp-content/themes/cr12_Adam_Gyarmati_traveler/images/traveler.jpg") 
-    no-repeat bottom center; }
-#headerimg  {
-    margin: 7px 9px 0; 
- } */

@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
 	<div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -25,20 +24,30 @@
     </div>
 
 
-  <div class="container">
+<div class="container">
     <div class="row">
-        <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
-    </div><hr>
-    <nav class="navbar">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Pages
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="<?php wp_list_pages( '&title_li=' ); ?>"></a>
+        <div class="text-right col-sm-5">
+            <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+        </div>
+        <div class="text-left col-sm-7">
+            <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
         </div>
     </div>
-        <p><?php wp_list_categories( '&title_li=' ); ?></p>
-    </nav> <hr>   
-</div> 
+</div><hr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="<?php wp_list_pages( '&title_li=' ); ?>"></a>
+                    </div>
+                </div>
+                <p><?php wp_list_categories( '&title_li=' ); ?></p>
+            </nav>   
+        </div> 
+    </div> 
+</div><hr>

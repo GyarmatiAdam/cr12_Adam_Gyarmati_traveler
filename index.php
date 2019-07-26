@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="container">
 	<div class="row">
 		<div class="col-sm-9 text-justify">
 			<?php
@@ -12,5 +13,4 @@
 			?>
 		</div>
 		<?php get_sidebar(); ?>
-	</div> <!-- /.row -->
-<?php get_footer(); ?>
+		<?php get_footer(); ?>
