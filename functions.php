@@ -1,5 +1,4 @@
 <?php
-
 $arguments = array(
 	'default-image' => get_template_directory_uri() . '/images/traveler.jpg',
 );
@@ -56,4 +55,11 @@ function arphabet_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+//register stylesheet and script
+function wpdocs_wp_traveler_scripts() {
+    wp_enqueue_style( 'style.css', get_stylesheet_uri() );
+    wp_enqueue_script( 'script.js', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_wp_traveler_scripts' );
 ?>
