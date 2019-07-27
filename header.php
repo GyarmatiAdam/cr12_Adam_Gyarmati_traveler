@@ -53,16 +53,6 @@
                 <?php wp_list_categories( '&title_li=' ); ?>
             </nav> 
         </div> 
-    </div> <br>
+    </div><br>
 </div><hr>
-    </div> 
-</div><hr>
-        <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
-    </div><hr>
-    <nav class="navbar">
-        <a class="nav-link" href="#">Home</a>
-        <?php wp_list_categories( '&title_li=' ); ?>
-        <?php wp_list_pages( '&title_li=' ); ?>
-    </nav> <hr>   
-</div> 
+ 
