@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Blog Template for Bootstrap</title>
+  <title>Adam's Traveler</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="<?php echo get_bloginfo( 'template_directory' );?>/style.css" rel="stylesheet">
   <?php wp_head();?>
@@ -36,17 +36,17 @@
 </div><hr>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 bg-info">
             <nav class="navbar">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Pages
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="<?php wp_list_pages( '&title_li=' ); ?>"></a>
+                    <p class="dropdown-item"><?php wp_list_pages( '&title_li=' ); ?></p>
                     </div>
                 </div>
-                <p><?php wp_list_categories( '&title_li=' ); ?></p>
+                <?php wp_list_categories( '&title_li=' ); ?>
             </nav>   
         </div> 
     </div> 
