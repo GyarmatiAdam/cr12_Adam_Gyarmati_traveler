@@ -11,12 +11,7 @@ body{
 }
 <<<<<<< HEAD
 .wp-block-image{
-    border-radius: 10px;
-    border: 2px solid rgb(33, 129, 173);
-}
-.bg-info{
-    border-radius: 10px;
-    border: 2px solid rgb(33, 129, 173);
+    max-width: 50%;
 }
 .cat-item{
     color: #17a2b8;
@@ -26,11 +21,10 @@ body{
 }
 .dropdown-menu{
     background-color: rgb(202, 233, 251);
-    border-radius: 10px;
-    border: 2px solid rgb(33, 129, 173);
 }
 .dropdown-menu a{
     color: rgb(0, 0, 0);
+<<<<<<< HEAD
 }
 .sidebar-module{
     background-color: #17a2b8;
@@ -58,3 +52,6 @@ body{
     margin: 7px 9px 0; 
  }
 >>>>>>> parent of a83d0ed... all required function works
+=======
+}
+>>>>>>> parent of a1ae94e... styled pages

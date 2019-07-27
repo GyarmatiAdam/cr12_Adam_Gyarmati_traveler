@@ -7,6 +7,6 @@
                 get_template_part( 'content', get_post_format() );
 			endwhile; endif;
 			?>
-		</div><br><br>
+		</div><br><br><hr>
 		<?php get_sidebar(); ?>
 		<?php get_footer(); ?>
