@@ -18,7 +18,11 @@
 	<div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <img src="<?php header_image(); ?>" class="img-fluid" style="max-width: 100%; height: auto;" alt="traveler" />
+                <div id="header">
+                    <div id="headerimg">
+                        <img src="<?php header_image(); ?>" class="img-fluid" alt="vienna events" />
+                    </div>
+                <div>
             </div>
         </div>
     </div>
@@ -26,6 +30,7 @@
 
 <div class="container">
     <div class="row">
+<<<<<<< HEAD
         <div class="text-right col-sm-5">
             <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
         </div>
@@ -51,3 +56,14 @@
         </div> 
     </div> 
 </div><hr>
+=======
+        <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+        <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
+    </div><hr>
+    <nav class="navbar">
+        <a class="nav-link" href="#">Home</a>
+        <?php wp_list_categories( '&title_li=' ); ?>
+        <?php wp_list_pages( '&title_li=' ); ?>
+    </nav> <hr>   
+</div> 
+>>>>>>> parent of a83d0ed... all required function works

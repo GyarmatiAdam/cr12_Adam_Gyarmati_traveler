@@ -8,8 +8,11 @@
  * add arguments to the theme support
  */
 $arguments = array(
-
-	'default-image' => get_template_directory_uri() . '/images/traveler.jpg',
+	'flex-width'    => true,
+	'width'         => 980,
+	'flex-height'    => true,
+	'height'        => 200,
+	'default-image' => get_template_directory_uri() . '/images/fakenews.png',
 );
 add_theme_support( 'custom-header', $arguments );
 
@@ -26,6 +29,7 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+<<<<<<< HEAD
 
 //dropdown categories
  $args = array(
@@ -77,4 +81,6 @@ function wpdocs_wp_traveler_scripts() {
     wp_enqueue_script( 'script.js', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_wp_traveler_scripts' );
+=======
+>>>>>>> parent of a83d0ed... all required function works
 ?>
