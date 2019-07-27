@@ -14,7 +14,7 @@
   <?php wp_head();?>
 </head>
 
-<body>
+<body><br><br>
 	<div class="container">
         <div class="row">
             <div class="col-sm-12">

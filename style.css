@@ -41,6 +41,10 @@ body{
 .sidebar-module a{
     color: #000000;
 }
+#primary-sidebar,
+.sidebar-module p{
+    word-wrap: break-word;
+}
 #primary-sidebar{
     margin-top: 10px;
 }
