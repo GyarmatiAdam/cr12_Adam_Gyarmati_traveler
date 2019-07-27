@@ -9,6 +9,7 @@ Tags: bootstrap
 body{
     background-color: rgb(202, 251, 251);
 }
+<<<<<<< HEAD
 .wp-block-image{
     border-radius: 10px;
     border: 2px solid rgb(33, 129, 173);
@@ -48,3 +49,12 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(33, 129, 173);
 }
+=======
+
+#header {
+    background: url("<?php bloginfo('stylesheet_directory'); ?>wp_event/wp-content/themes/viennaevents/images/vienna.jpeg") 
+    no-repeat bottom center; }
+#headerimg  {
+    margin: 7px 9px 0; 
+ }
+>>>>>>> parent of a83d0ed... all required function works
