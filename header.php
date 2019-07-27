@@ -30,7 +30,6 @@
 
 <div class="container">
     <div class="row">
-<<<<<<< HEAD
         <div class="text-right col-sm-5">
             <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
         </div>
@@ -52,18 +51,7 @@
                     </div>
                 </div>
                 <?php wp_list_categories( '&title_li=' ); ?>
-            </nav>   
+            </nav> 
         </div> 
-    </div> 
+    </div> <br>
 </div><hr>
-=======
-        <h1 class=""><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class=""><?php echo get_bloginfo( 'description' ); ?></p>
-    </div><hr>
-    <nav class="navbar">
-        <a class="nav-link" href="#">Home</a>
-        <?php wp_list_categories( '&title_li=' ); ?>
-        <?php wp_list_pages( '&title_li=' ); ?>
-    </nav> <hr>   
-</div> 
->>>>>>> parent of a83d0ed... all required function works

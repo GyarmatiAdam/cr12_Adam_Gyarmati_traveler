@@ -1,22 +1,9 @@
 <?php
-/**
- * add theme support to dashboard, like header image
- */
-// add_theme_support( 'custom-header' );
 
-/**
- * add arguments to the theme support
- */
 $arguments = array(
-	'flex-width'    => true,
-	'width'         => 980,
-	'flex-height'    => true,
-	'height'        => 200,
-	'default-image' => get_template_directory_uri() . '/images/fakenews.png',
+	'default-image' => get_template_directory_uri() . '/images/traveler.jpg',
 );
 add_theme_support( 'custom-header', $arguments );
-
-
 /**
  * add menu function to dashboard
  */
@@ -29,8 +16,6 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
-<<<<<<< HEAD
-
 //dropdown categories
  $args = array(
 	'show_option_all'    => '',
@@ -55,14 +40,12 @@ add_action( 'init', 'register_my_menus' );
 	'hide_if_empty'      => false,
 	'value_field'	     => 'term_id',
 ); 
-
 //widgets
 /**
  * Register our sidebars and widgetized areas.
  *
  */
 function arphabet_widgets_init() {
-
 	register_sidebar( array(
 		'name'          => 'Home right sidebar',
 		'id'            => 'home_right_1',
@@ -71,16 +54,6 @@ function arphabet_widgets_init() {
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
 	) );
-
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-
-//register stylesheet and script
-function wpdocs_wp_traveler_scripts() {
-    wp_enqueue_style( 'style.css', get_stylesheet_uri() );
-    wp_enqueue_script( 'script.js', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'wpdocs_wp_traveler_scripts' );
-=======
->>>>>>> parent of a83d0ed... all required function works
 ?>
