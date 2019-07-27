@@ -52,3 +52,8 @@ body{
     border-radius: 10px;
     border: 2px solid rgb(33, 129, 173);
 }
+.avatar{
+    border-radius: 50%;
+    border: 2px solid rgb(33, 129, 173);
+    margin: auto;
+}

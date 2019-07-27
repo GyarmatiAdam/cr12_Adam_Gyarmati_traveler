@@ -1,8 +1,10 @@
 <div class="col-sm-3">
       <div class="sidebar-module">
-        <h4>About</h4>
-        <p><?php the_author_meta( 'display_name' ); ?> </p>
-        <p><?php the_author_meta( 'user_email' ); ?> </p>
+        <div class="text-center">
+          <h3><?php the_author_meta( 'display_name' ); ?> </h3>
+          <?php echo get_avatar( get_the_author_meta( 'ID' )); ?>
+          <p><?php the_author_meta( 'user_email' ); ?> </p>
+        </div>
       </div>
       <div class="sidebar-module">
         <h4>Archives</h4>
