@@ -48,13 +48,13 @@ endif;
  
 // Display Form/Login info Section
 // the comment_form() function handles this and can be used without any paramaters simply as "comment_form()"
-comment_form(array(
-  // see codex http://codex.wordpress.org/Function_Reference/comment_form for default values
-  // tutorial here http://blogaliving.com/wordpress-adding-comment_form-theme/
-  'comment_field' => '<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4" aria-required="true"></textarea></p>',
-  'label_submit' => 'Submit Comment',
-  'comment_notes_after' => ''
-  ));
+// comment_form(array(
+//   // see codex http://codex.wordpress.org/Function_Reference/comment_form for default values
+//   // tutorial here http://blogaliving.com/wordpress-adding-comment_form-theme/
+//   'comment_field' => '<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4" aria-required="true"></textarea></p>',
+//   'label_submit' => 'Submit Comment',
+//   'comment_notes_after' => ''
+//   ));
  
 // RSS comments link
 echo '<div class="comments_rss">';
