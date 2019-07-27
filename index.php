@@ -11,6 +11,6 @@
 			endif;
 			endwhile; endif;
 			?>
-		</div><br><br><hr>
+		</div><br><br>
 		<?php get_sidebar(); ?>
 		<?php get_footer(); ?>
